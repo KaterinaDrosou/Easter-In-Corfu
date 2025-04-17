@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{921DF23D-F08A-4E8A-8FAA-6701EFD7D2AB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EasterInCorfu</RootNamespace>
+    <AssemblyName>Easter in Corfu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Vlc.DotNet.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=84529da31f4eb963, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vlc.DotNet.Core.3.1.0\lib\net45\Vlc.DotNet.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Vlc.DotNet.Core.Interops, Version=3.1.0.0, Culture=neutral, PublicKeyToken=84529da31f4eb963, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vlc.DotNet.Core.Interops.3.1.0\lib\net45\Vlc.DotNet.Core.Interops.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Palaiokastritsa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Palaiokastritsa.Designer.cs">
+      <DependentUpon>Palaiokastritsa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonRepo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonRepo.Designer.cs">
+      <DependentUpon>MonRepo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaintsMichaelAndGeorgiouPalace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaintsMichaelAndGeorgiouPalace.Designer.cs">
+      <DependentUpon>SaintsMichaelAndGeorgiouPalace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OldFort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldFort.Designer.cs">
+      <DependentUpon>OldFort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Carnival.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Carnival.Designer.cs">
+      <DependentUpon>Carnival.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Easter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Easter.Designer.cs">
+      <DependentUpon>Easter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gastronomy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gastronomy.Designer.cs">
+      <DependentUpon>Gastronomy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pontikonisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pontikonisi.Designer.cs">
+      <DependentUpon>Pontikonisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaintSpyridon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaintSpyridon.Designer.cs">
+      <DependentUpon>SaintSpyridon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralInfo.Designer.cs">
+      <DependentUpon>GeneralInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnglishDomination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnglishDomination.Designer.cs">
+      <DependentUpon>EnglishDomination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RomanPeriod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RomanPeriod.Designer.cs">
+      <DependentUpon>RomanPeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ByzantineVenetianPeriod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ByzantineVenetianPeriod.Designer.cs">
+      <DependentUpon>ByzantineVenetianPeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrenchDomination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrenchDomination.Designer.cs">
+      <DependentUpon>FrenchDomination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Climate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Climate.Designer.cs">
+      <DependentUpon>Climate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Today.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Today.Designer.cs">
+      <DependentUpon>Today.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Achilleion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Achilleion.Designer.cs">
+      <DependentUpon>Achilleion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Palaiokastritsa.resx">
+      <DependentUpon>Palaiokastritsa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonRepo.resx">
+      <DependentUpon>MonRepo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaintsMichaelAndGeorgiouPalace.resx">
+      <DependentUpon>SaintsMichaelAndGeorgiouPalace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldFort.resx">
+      <DependentUpon>OldFort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Carnival.resx">
+      <DependentUpon>Carnival.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Easter.resx">
+      <DependentUpon>Easter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gastronomy.resx">
+      <DependentUpon>Gastronomy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pontikonisi.resx">
+      <DependentUpon>Pontikonisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaintSpyridon.resx">
+      <DependentUpon>SaintSpyridon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralInfo.resx">
+      <DependentUpon>GeneralInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnglishDomination.resx">
+      <DependentUpon>EnglishDomination.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RomanPeriod.resx">
+      <DependentUpon>RomanPeriod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ByzantineVenetianPeriod.resx">
+      <DependentUpon>ByzantineVenetianPeriod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrenchDomination.resx">
+      <DependentUpon>FrenchDomination.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Climate.resx">
+      <DependentUpon>Climate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Today.resx">
+      <DependentUpon>Today.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Achilleion.resx">
+      <DependentUpon>Achilleion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\corfu1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\corfu2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\corfu3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\medieval-corfu1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\medieval-burn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\libro d%27oro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\corfu4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\corfu4a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\corfu_map.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\achilleio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\achilleio2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\pinakas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\mon-repos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\mon-repos_inside.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\anaktoro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\anaktoro2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\palaiokastritsa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\frourio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\frourio2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\palaiokastritsa1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\mpotides.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\karnavali.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\pastitsada.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\koum kouat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\mpourdeto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\pontikonisi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\pontikonisi2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\agios-spiridon-church.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
